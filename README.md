@@ -6,7 +6,7 @@ This repository contains my solutions to **Striver's A2Z DSA Sheet** implemented
 - C++
 
 ## Progress
-- Problems Solved: 0 / 455
+- Problems Solved: 0 / 474
 
 ## Repository Structure
 
@@ -28,4 +28,4 @@ This repository contains my solutions to **Striver's A2Z DSA Sheet** implemented
 - Complete the Striver A2Z DSA Sheet
 - Write clean and optimized C++ solutions
 - Maintain consistent GitHub commits
-- 
+  
