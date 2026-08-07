@@ -5,8 +5,10 @@ This repository contains my solutions to **Striver's A2Z DSA Sheet** implemented
 ## Language
 - C++
 
-## Progress
-- Problems Solved: 0 / 474
+## Overall Progress: 31/474
+Easy:28
+Medium:3
+Hard:0
 
 ## Repository Structure
 
