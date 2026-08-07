@@ -24,7 +24,7 @@ Hard:0
 09_Graphs/
 10_Dynamic_Programming/
 and so on
-
+```
 ## Goal
 
 - Complete the Striver A2Z DSA Sheet
