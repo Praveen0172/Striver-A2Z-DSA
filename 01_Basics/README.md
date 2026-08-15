@@ -5,10 +5,8 @@ This repository contains my solutions to **Striver's A2Z DSA Sheet** implemented
 ## Language
 - C++
 
-## Overall Progress: 31/474
-Easy:28
-Medium:3
-Hard:0
+## Progress
+- Problems Solved: 0 / 474
 
 ## Repository Structure
 
@@ -23,11 +21,11 @@ Hard:0
 08_Trees/
 09_Graphs/
 10_Dynamic_Programming/
-and so on
 ```
+
 ## Goal
 
 - Complete the Striver A2Z DSA Sheet
 - Write clean and optimized C++ solutions
-
+- Maintain consistent GitHub commits
   
