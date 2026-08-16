@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<list>
 using namespace std;
 
 void studypairs(){
@@ -125,7 +126,110 @@ void studyvectors(){
     cout<<m1.empty()<<endl;
     cout<<m2.empty()<<endl;//1 means true and 0 means false
 }
+
+void studylist(){
+    list<int> l;
+    l.push_back(4);
+    l.emplace_back(8);
+
+    l.push_front(5);
+    l.emplace_front(45);//this is less costlier than insert function
+    //other operations like erase inseri begin end will be same as vectors
+    for(auto c:l){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+}
+
+void studydeque(){
+    deque<int> d;
+    d.push_back(7);
+    d.emplace_back(6);
+
+    d.push_front(4);
+    d.emplace_front(10);
+    for(auto c:d){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+
+    d.pop_back();
+    d.pop_front();
+    for(auto c:d){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+
+    cout<<d.back()<<endl;
+    cout<<d.front()<<endl;
+    //remaining all operations are same as vectors
+}
+
+void studystack(){
+    stack<int> s;       //LIFO -> Last In Fist Out
+    s.push(4);
+    s.push(5);           //there are mostly 3 generic functions here i.e; push,pop,top
+    s.push(9);
+    s.push(45);
+    s.emplace(10);      //understand it like a box 
+
+    cout<<s.top()<<endl;
+
+    s.pop();//will pop out the element that went in last in stack
+
+    cout<<s.top()<<endl;
+    cout<<s.size()<<endl;
+    cout<<s.empty()<<endl;
+
+    stack<int> s1,s2;
+    s1.swap(s2);//will swap both stacks
+}
+
+void studyqueue(){
+    queue<int> q;
+    q.push(4);
+    q.push(5);
+    q.emplace(10);
+
+    q.back() +=35;//q.back() will point to the element which came last here it is 10
+
+    cout<<q.back()<<endl;
+
+    q.pop();//will remove the first element 4 in this case
+    cout<<q.front()<<endl;
+    //size,swap,empty same as stack
+}
+
+void studypriorityqueue(){
+    //max heap
+    priority_queue<int> p;//will keep largest element on top and give priority to larger element
+    p.push(3);
+    p.push(9);         //time complexity for push and pop is logn and for top is O(1)
+    p.push(10);
+    p.emplace(45);
+
+    cout<<p.top()<<endl;
+
+    p.pop();//pops out the largest(top) element
+    cout<<p.top()<<endl;
+
+    //minimum heap(will keep smallest element on top and will give priority to smaller element)
+    priority_queue<int,vector<int>,greater<int>> pq;
+    pq.push(10);
+    pq.push(2);
+    pq.push(9);
+    pq.emplace(45);
+
+    cout<<pq.top()<<endl;//will return the smallest element 
+}
 int main(){
     studypairs();
     studyvectors();
+    studylist();
+    studydeque();
+    studystack();
+    studyqueue();
+    studypriorityqueue();
+
+    return 0;
 }
